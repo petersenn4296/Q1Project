@@ -1,0 +1,35 @@
+.main {
+  /* background-image: url(http://www.junctioncenteryoga.com/wp-content/uploads/2016/08/junction-center-yoga-door-county-mats.jpg); */
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome, .select, .icon {
+  color: lightgray;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+}
+.difficulty {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 25px;
+}
+.bcard {
+  background-color: red;
+  justify-content: space-between;
+  text-align: center;
+}
+.beginner-card, .intermediate-card, .advanced-card {
+  max-width: 85%;
+}
+.poses {
+  border-radius: 15%;
+  width: 225px;
+  height: 225px;
+}
+.diff:hover {
+  background-color: lightblue;
+  opacity: .75;
+}

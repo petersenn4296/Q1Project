@@ -2,24 +2,118 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
 
     <title></title>
   </head>
 
-
-
-
-
-
   <body>
-    <div>
-      <label for="show-pose"><input type="button" id="show-pose" value="Show me yoga seal"></label>
+    <div class="container-fluid main">
 
-      <img class="pose-card"/>
-    </div>
+      <div class="row welcome">
+        <h1 class="mt-5">Welcome to your Yoga Tracker!</h1>
+      </div>
+      <br>
+      <br>
+      <div class="row select">
+        <h4> Please select your level:</h4>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="icon col-4 difficulty beginner">Beginner<br><br><img class="diff" src="chakra.png"></div>
+          <div class="icon col-4 difficulty intermediate">Intermediate<br><br><img class="diff" src="lotus.png"></div>
+          <div class="icon col-4 difficulty advanced">Advanced<br><br><img class="diff" src="yoga.png"></div>
+        </div>
+      </div>
+
+<!--------------------------- Beginner poses  ------------------------------->
+      <div class="container-fluid beginner-card mt-5">
+        <div class="row bcard">
+          <div><img src="beginner-images/e-tri2.gif" class="poses mt-4 ml-4"><br>Extended Triangle</div>
+
+          <div><img src="beginner-images/cow.gif" class="poses mt-4"><br>Cow Pose</div>
+
+          <div><img src="beginner-images/childs.gif" class="poses mt-4"><br>Child's Pose</div>
+
+          <div><img src="beginner-images/diamond.gif" class="poses mt-4 mr-4"><br>Diamond Pose</div>
+
+        </div>
+        <div class="row bcard">
+          <div><img src="beginner-images/hydrant.gif" class="poses mt-4 ml-4"><br>Fire Hydrant</div>
+
+          <div><img src="beginner-images/cobra.gif" class="poses mt-4"><br>Cobra</div>
+
+          <div><img src="beginner-images/side-plank.gif" class="poses mt-4"><br>Side Plank</div>
+
+          <div><img src="beginner-images/locust.gif" class="poses mt-4 mr-4"><br>Locust A</div>
+        </div>
+      </div>
 
 
-  </body>
+<!--------------------------- Intermediate poses  ------------------------------->
+      <div class="container-fluid intermediate-card mt-5">
+        <div class="row bcard">
+          <div><img src="intermediate-images/ananta.gif" class="poses mt-4 ml-4"><br>Ananta's</div>
+
+          <div><img src="intermediate-images/bird-op.gif" class="poses mt-4"><br>Bird's Of Paradise</div>
+
+          <div><img src="intermediate-images/bridge.gif" class="poses mt-4"><br>Full Bridge</div>
+
+          <div><img src="intermediate-images/fish.gif" class="poses mt-4 mr-4"><br>Fish</div>
+
+        </div>
+        <div class="row bcard">
+          <div><img src="intermediate-images/.gif" class="poses mt-4 ml-4"><br>Intermediate</div>
+
+          <div><img src="intermediate-images/.gif" class="poses mt-4"><br>Intermediate</div>
+
+          <div><img src="intermediate-images/.gif" class="poses mt-4"><br>Intermediate</div>
+
+          <div><img src="intermediate-images/.gif" class="poses mt-4 mr-4"><br>Intermediate</div>
+        </div>
+      </div>
+
+
+<!--------------------------- Advanced poses  ------------------------------->
+      <div class="container-fluid advanced-card mt-5">
+        <div class="row bcard">
+          <div><img src="basic.png" class="poses mt-4 ml-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4 mr-4"><br>Advanced</div>
+
+        </div>
+        <div class="row bcard">
+          <div><img src="basic.png" class="poses mt-4 ml-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4 mr-4"><br>Advanced</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </body>
 </html>
