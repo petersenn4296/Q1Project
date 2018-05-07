@@ -44,7 +44,10 @@ var pw = $(".password");
 $(".register").click(function store() {
     localStorage.setItem('username', un.val());
     localStorage.setItem('password', pw.val());
-    alert("You have created an account");
+    if (pw.val().length >= 6) {
+      alert("You have created an account");
+    } else alert("Password must be 6 characters");
+
 })
 // Checks UN and PW on click of login
 $(".login").click(function check() {
@@ -85,16 +88,14 @@ $(".login").click(function check() {
 
 
 
- let url = 'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose';
+ let url = 'http://g-wolframaplha.herokuapp.com/v2/query?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose&format=image';
    $(".poses").click(function() {
      console.log("clicked it");
 
 
-         $.ajax({
-            url : url,
-         }).always(function(){
-            $(".wolf").attr("src", url);
-          });
+
+
+
 
 });
 
@@ -115,29 +116,29 @@ $(".login").click(function check() {
 
 
 
-
 // All of this code is to pull data from Wolfram API:
 
 
  // let url = 'http://g-wolframaplha.herokuapp.com/v2/query?appid=LU5VY9-W54XP5TG4W&input=Inverted+Seal+Pose';
- //
- //   $(".buttons").click(function() {
- //     console.log("clicked it");
- //$.ajax({
- //    url : url,
- // }).always(function(){
- //    $(".image").attr("src", url);
- // });
- // // $.ajax({
+
+
+
+ // $.ajax({
   //   url: url,
   //   success: function(result) {
   //     console.log(result);
   //     $(".wolf").attr("src", url);
   //   }
   // });
- //
- //
 
- //   });
+
+
+  // $.ajax({
+  //    url : url,
+  // }).always(function(){
+  //    $(".wolf").attr("src", url);
+  //    console.log(url);
+  // });
+
 
  // Pulls Wolfram Simple Data as image and makes it appear on the screen
