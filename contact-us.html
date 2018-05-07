@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title></title>
+  </head>
+
+  <body>
+    <div class="container-fluid super">
+    <div class="container main">
+<!-- Header -->
+<button type="button" class="btn btn-outline-secondary btn-sm mt-5 mr-5" style="float: right;" id="butt" data-toggle="modal" data-target=".myModal">
+  Sign in/up
+</button>
+      <div class="row welcome ml-3">
+        <h1 class="mt-5">YogiLog<img src="footcon.png" class="header-img ml-5 mb-3"/></h1>
+      </div>
+      <!-- Modal -->
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log in or register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                Username:<br>
+                <input type="text" name="username"><br>
+                Password<br>
+                <input type="password" name="password">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">Register</button>
+              <button type="button" class="btn btn-primary">Log In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="home-page.html">Home</a>
+              <a class="nav-item nav-link" href="#">Progress</a>
+              <a class="nav-item nav-link active" href="#">About Us<span class="sr-only">(current)</span></a>
+            </div>
+          </div>
+        </nav>
+<!-- About us title and text -->
+        <div class="row about mb-3 mt-5"><h1>About Us:</h1></div>
+        <div class="row about-text">
+          <div class="col-2"></div>
+          <p class="col-8 mt-3">Thank you so much for using YogiLog! I am an aspiring developer tying to make it in the dev world. This is my first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper lacus purus, ut vestibulum sem iaculis ut. Mauris non auctor libero, vel egestas elit. Sed bibendum maximus mi, nec mattis massa pharetra quis. Ut blandit a ligula in placerat. Aliquam tincidunt purus vitae ipsum sodales mollis. Sed nec neque tempus, interdum elit at, sodales lectus. In vel lectus mi.</p>
+          <div class="col-2"></div>
+        </div>
+        <br> <br> <br> <br>
+        <!-- Contact us info -->
+        <div class="row contact"><h1>Contact Us:</h1></div>
+        <div class="row contact mt-4"><p>Phone: 970-XXX-XXXX</p></div>
+        <div class="row contact"><p>E-mail: petersenn4296@gmail.com</p></div>
+        <div class="row contact"><p>GitHub: https://github.com/petersenn4296</p></div>
+<br> <br> <br> <br>
+        <!-- Tech we used with  respective icons -->
+        <h3 align="center">Technologies we used for YogiLog:</h3>
+        <div class="row tech">
+          <div class="col-2"></div>
+          <img src="tech-icons/html-icon.png" class="tech-icons col-2"/>
+          <img src="tech-icons/css-icon.jpeg" class="tech-icons col-2"/>
+          <img src="tech-icons/jquery-icon.png" class="tech-icons col-2"/>
+          <img src="tech-icons/bootstrap-icon.jpeg" class="tech-icons col-2"/>
+          <div class="col-2"></div>
+        </div>
+
+<!-- Footer -->
+          <div class="row footer mt-3">
+            <img src="footcon.png" class="footer-img ml-5 mt-3 mb-3"/>
+            <p class="mt-3 ml-3"> Yogi Log <br>About Us<br> YogiLog LLC ©</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+  <div class="container-fluid super">
+    <div class="container main">
+
+      <!-- Sign in button -->
+      <button type="button" class="btn btn-outline-secondary btn-sm mt-5 mr-5" style="float: right;" id="butt" data-toggle="modal" data-target=".myModal">
+        Sign in/up
+      </button>
+      <!-- Header -->
+      <div class="row welcome ml-3">
+        <h1 class="mt-5">YogiLog<img src="footcon.png" class="header-img ml-5 mb-3"/></h1>
+      </div>
+
+
+
+
+      <!--  Log in Modal -->
+      <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Log in or register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                Username:<br>
+                <input type="text" name="username" class="username"><br> Password:
+                <br>
+                <input type="password" name="password" class="password" minlength=6 required placeholder="Minimum 6 characters">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary register">Register</button>
+              <button type="button" class="btn btn-primary login">Log In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Progress</a>
+            <a class="nav-item nav-link" href="contact-us.html">About Us</a>
+          </div>
+        </div>
+        <br>
+        <br>
+      </nav>
+      <!-- Intro paragraph and level selector  -->
+      <div class="row mt-5">
+        <div class="col-2"> </div>
+        <div class="info-p col-8">
+          <p>Welcome to the YogiLog! Your home for tracking all your yoga poses. Sign in and make an account to keep track of your progress. When clicking on a pose you can either see all its info or add it to your progress tracker.</p>
+        </div>
+        <div class="col-2"> </div>
+      </div><br><br><br><br><br><br>
+      <div class="row select mb-4">
+        <h4> Please select your level:</h4>
+      </div>
+      <br>
+      <br>
+      <!---///////// Difficulty Selector Icons /////////-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="icon col-4 difficulty beginner">Beginner<br><br><img class="diff" src="chakra.png"></div>
+          <div class="icon col-4 difficulty intermediate">Intermediate<br><br><img class="diff" src="lotus.png"></div>
+          <div class="icon col-4 difficulty advanced">Advanced<br><br><img class="diff" src="yoga.png"></div>
+        </div>
+      </div>
+
+      <!--- Beginner poses  ------->
+      <div class="container-fluid beginner-card mt-5">
+
+        <div class="row bcard">
+          <div><img src="beginner-images/e-tri2.gif" class="poses mt-4 ml-4"><br>Extended Triangle</div>
+          <div><img src="beginner-images/cow.gif" class="poses mt-4"><br>Cow Pose</div>
+          <div><img src="beginner-images/childs.gif" class="poses mt-4"><br>Child's Pose</div>
+          <div><img src="beginner-images/diamond.gif" class="poses mt-4 mr-4"><br>Diamond Pose</div>
+        </div>
+
+        <div class="row bcard">
+          <div><img src="beginner-images/hydrant.gif" class="poses mt-4 ml-4"><br>Fire Hydrant</div>
+          <div><img src="beginner-images/cobra.gif" class="poses mt-4"><br>Cobra</div>
+          <div><img src="beginner-images/side-plank.gif" class="poses mt-4"><br>Side Plank</div>
+          <div><img src="beginner-images/locust.gif" class="poses mt-4 mr-4"><br>Locust A</div>
+        </div>
+      </div>
+
+
+      <!--  Intermediate poses  ------>
+      <div class="container-fluid intermediate-card mt-5">
+        <div class="row bcard">
+          <div><img src="intermediate-images/ananta.gif" class="poses mt-4 ml-4"><br>Ananta's</div>
+          <div><img src="intermediate-images/bird-op.gif" class="poses mt-4"><br>Bird's Of Paradise</div>
+          <div><img src="intermediate-images/bridge.gif" class="poses mt-4"><br>Full Bridge</div>
+          <div><img src="intermediate-images/fish.gif" class="poses mt-4 mr-4"><br>Fish</div>
+        </div>
+
+        <div class="row bcard">
+          <div><img src="intermediate-images/.gif" class="poses mt-4 ml-4"><br>Intermediate</div>
+          <div><img src="intermediate-images/.gif" class="poses mt-4"><br>Intermediate</div>
+          <div><img src="intermediate-images/.gif" class="poses mt-4"><br>Intermediate</div>
+          <div><img src="intermediate-images/.gif" class="poses mt-4 mr-4"><br>Intermediate</div>
+        </div>
+      </div>
+
+
+      <!--- Advanced poses  ------->
+      <div class="container-fluid advanced-card mt-5">
+        <div class="row bcard">
+          <div><img src="basic.png" class="poses mt-4 ml-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4 mr-4"><br>Advanced</div>
+
+        </div>
+        <div class="row bcard">
+          <div><img src="basic.png" class="poses mt-4 ml-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4"><br>Advanced</div>
+
+          <div><img src="basic.png" class="poses mt-4 mr-4"><br>Advanced</div>
+        </div>
+
+        <!-- Pose info pulled from API  -->
+      </div>
+      <br><br><br>
+      <div class="row info-img">
+        <img class="wolf" /> </div>
+
+
+<!-- Footer -->
+      <div class="row footer mt-3">
+        <img src="footcon.png" class="footer-img ml-5 mt-3 mb-3" />
+        <p class="mt-3 ml-3"> YogiLog <br><a href="contact-us.html">About Us<a/><br> Yogi Log LLC ©</p>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

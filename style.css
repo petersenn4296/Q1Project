@@ -1,12 +1,15 @@
 .main {
-  /* background-image: url(http://www.junctioncenteryoga.com/wp-content/uploads/2016/08/junction-center-yoga-door-county-mats.jpg); */
-  background-color: blue;
+  /* background-image: url(chak.jpg); */
+  background-color: lightblue;
   background-size: cover;
   background-position: center;
+  width: 90vh;
 }
-
-.welcome, .select, .icon {
-  color: lightgray;
+.super {
+  background-color: red;
+}
+.select, .icon {
+  color: orange;
   justify-content: center;
   align-items: center;
   font-family: fantasy;
@@ -17,7 +20,7 @@
   font-size: 25px;
 }
 .bcard {
-  background-color: red;
+  background-color: DarkGoldenRod;
   justify-content: space-between;
   text-align: center;
 }
@@ -26,10 +29,64 @@
 }
 .poses {
   border-radius: 15%;
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
+}
+.poses:hover {
+  border: 5px solid black;
+  opacity: .5;
 }
 .diff:hover {
   background-color: lightblue;
   opacity: .75;
+}
+.welcome {
+  font-family: fantasy;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+.info-p {
+  text-align: center;
+}
+.footer-img {
+  width: 100px;
+  height: 100px;
+}
+.footer {
+  background: linear-gradient(red, green);
+}
+.header-img {
+  width: 50px;
+  height: 50px;
+}
+.wolf {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-img {
+  text-align: center;
+  justify-content: center;
+}
+/* .pose-name {
+  text-align: center;
+} */
+.tech {
+  background-color: white;
+}
+.about, .about-text, .contact {
+  justify-content: center;
+}
+.about-text {
+  text-align: center;
+  justify-content: center;
+}
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
 }
