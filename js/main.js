@@ -64,45 +64,63 @@ $(".login").click(function check() {
     }
 })
 
+// Pose Modal
+var modal2 = $('#poseModal');
+var button2 = $('.poses');
+var close = $('.close');
+let positon = 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- let url = 'http://g-wolframaplha.herokuapp.com/v2/query?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose&format=image';
-   $(".poses").click(function() {
-     console.log("clicked it");
-
-
-
-
-
-
+button2.click(function () {
+  poseModal.style.display = "block";
+  position = $(this).attr("id")-1;
+});
+close.click(function () {
+  poseModal.style.display = "none";
 });
 
 
 
+let url = ['http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Cow+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Childs+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Diamond+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Fire+Hydrant+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Cobra+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Side+Plank+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Locust+A+Pose',
 
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Anantas+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Bird+of+Paradise+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Full+Bridge+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Fish+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
 
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose',
+'http://g-wolframaplha.herokuapp.com/v1/simple?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose'];
+
+// Beginner poses //
+$("#get-info").click(function() {
+    console.log(url[position]);
+    $(".wolf").hide();
+    $.ajax({
+       url: (url[position]),
+       success: function(result) {
+         console.log(result);
+         $(".wolf").show();
+         $(".wolf").attr("src", (url[position]));
+       }
+     });
+
+   });
  });
 ///////////////////////////////////////////////////////////////////
 
@@ -119,17 +137,11 @@ $(".login").click(function check() {
 // All of this code is to pull data from Wolfram API:
 
 
- // let url = 'http://g-wolframaplha.herokuapp.com/v2/query?appid=LU5VY9-W54XP5TG4W&input=Inverted+Seal+Pose';
 
 
+//let url = 'http://g-wolframaplha.herokuapp.com/v2/query?appid=LU5VY9-W54XP5TG4W&input=Extended+Triangle+Pose&format=image';
 
- // $.ajax({
-  //   url: url,
-  //   success: function(result) {
-  //     console.log(result);
-  //     $(".wolf").attr("src", url);
-  //   }
-  // });
+ //
 
 
 
