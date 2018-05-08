@@ -73,6 +73,7 @@ let positon = 0;
 button2.click(function () {
   poseModal.style.display = "block";
   position = $(this).attr("id")-1;
+  console.log(position);
 });
 close.click(function () {
   poseModal.style.display = "none";
@@ -114,13 +115,27 @@ $("#get-info").click(function() {
     $.ajax({
        url: (url[position]),
        success: function(result) {
-         console.log(result);
          $(".wolf").show();
          $(".wolf").attr("src", (url[position]));
        }
      });
-
    });
+
+$("#add-progress").click(function() {
+  progressbox.style.display = "block";
+  $("#progressbox").append($("#A"));
+  console.log($("#A"));
+
+  //document.body.super.main.progressbox.append($(this).ass[position]);
+
+});
+
+
+
+
+
+
+
  });
 ///////////////////////////////////////////////////////////////////
 

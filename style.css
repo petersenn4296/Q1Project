@@ -6,7 +6,7 @@
   width: 90vh;
 }
 .super {
-  background-color: red;
+  background: linear-gradient(to right, red , lightblue);
 }
 .select, .icon {
   color: orange;
@@ -95,15 +95,23 @@
 .link-color {
   color: gray;
 }
-.progress-box {
-  width: 85%;
-  height: 700px;
+#progressbox {
+  width: 90%;
+  height: 630px;
   background-color: black;
+  justify-content: space-between;
+  display: none;
 }
-/* .pose-card {
-  height: 100px;
-  width: 60px;
-} */
 .edit {
   border: 2px solid gray;
+}
+.save {
+  justify-content: center;
+}
+.poses-card {
+  height: 60px;
+}
+#A {
+  display: none;
+  z-index: -1;
 }
