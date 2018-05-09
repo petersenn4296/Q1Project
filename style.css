@@ -34,12 +34,13 @@
   font-size: 25px;
 }
 .bcard {
-  background-color: DarkGoldenRod;
+  background-color: inherit;
   justify-content: space-between;
   text-align: center;
 }
 .beginner-card, .intermediate-card, .advanced-card {
   max-width: 85%;
+  background: linear-gradient(#ECEBF3, #6D7275);
 }
 .poses {
   border-radius: 15%;
@@ -115,7 +116,7 @@
 #progressbox {
   width: 90%;
   height: 630px;
-  background-color: white;
+  background: linear-gradient(#ECEBF3, #0C120C);
   justify-content: space-between;
   display: none;
 }

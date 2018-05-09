@@ -25,9 +25,11 @@ $(document).ready(function() {
 
 function date2() {
   var fullDate = new Date();
-  var twoDigitMonth = fullDate.getMonth()+"";if(twoDigitMonth.length==1)	twoDigitMonth="0" +twoDigitMonth;
+  var twoDigitMonth = fullDate.getMonth()+1 +"";if(twoDigitMonth.length==1)	twoDigitMonth="0" +twoDigitMonth;
   var twoDigitDate = fullDate.getDate()+"";if(twoDigitDate.length==1)	twoDigitDate="0" +twoDigitDate;
-  var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear();console.log(currentDate);
+  var currentDate = twoDigitMonth + "/" + twoDigitDate + "/" + fullDate.getFullYear();
+  console.log(fullDate.getMonth());
+  return (currentDate);
 }
 
 
@@ -158,10 +160,13 @@ function date2() {
   });
 
   $("#add-progress").click(function() {
+
     hiddenAdd.style.display = "block";
     lotusicon.style.display = "none";
     progressbox.style.display = "block";
-    $(".date1").text(date2());
+    $(".date1").empty();
+
+    $(".date1").append("<p>" + date2() + "</p>");
     $(".ass").css('z-index', 999)
     $(".bot").prepend(($(".ass")[position]));
     // console.log($("#A"));
