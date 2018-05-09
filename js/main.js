@@ -23,7 +23,12 @@ function openTab(event, cityName) {
 
 $(document).ready(function() {
 
-
+function date2() {
+  var fullDate = new Date();
+  var twoDigitMonth = fullDate.getMonth()+"";if(twoDigitMonth.length==1)	twoDigitMonth="0" +twoDigitMonth;
+  var twoDigitDate = fullDate.getDate()+"";if(twoDigitDate.length==1)	twoDigitDate="0" +twoDigitDate;
+  var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear();console.log(currentDate);
+}
 
 
 
@@ -154,7 +159,9 @@ $(document).ready(function() {
 
   $("#add-progress").click(function() {
     hiddenAdd.style.display = "block";
+    lotusicon.style.display = "none";
     progressbox.style.display = "block";
+    $(".date1").text(date2());
     $(".ass").css('z-index', 999)
     $(".bot").prepend(($(".ass")[position]));
     // console.log($("#A"));
