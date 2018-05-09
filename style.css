@@ -129,8 +129,18 @@
   height: 60px;
 }
 #A {
+  display: "block";
+  /* z-index: -1; */
+}
+#hiddenAdd, #hiddenAdd2 {
   display: none;
-  z-index: -1;
+  text-align: center;
+}
+.modBut {
+  justify-content: space-between;
+}
+.hiddenBank {
+  display: none;
 }
 
 

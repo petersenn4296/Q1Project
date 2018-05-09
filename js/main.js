@@ -105,6 +105,7 @@ $(document).ready(function() {
 
   close.click(function() {
     poseModal.style.display = "none";
+    hiddenAdd.style.display = "none";
   });
 
 
@@ -140,6 +141,7 @@ $(document).ready(function() {
   // Beginner poses //
   $("#get-info").click(function() {
     console.log(url[position]);
+    hiddenAdd2.style.display = "block";
     $(".wolf").hide();
     $.ajax({
       url: (url[position]),
@@ -151,9 +153,11 @@ $(document).ready(function() {
   });
 
   $("#add-progress").click(function() {
+    hiddenAdd.style.display = "block";
     progressbox.style.display = "block";
-    $("#progressbox").append($("#A"));
-    console.log($("#A"));
+    $(".ass").css('z-index', 999)
+    $(".bot").prepend(($(".ass")[position]));
+    // console.log($("#A"));
     //document.body.super.main.progressbox.append($(this).ass[position]);
   });
     $("#defaultOpen").click();

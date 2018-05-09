@@ -17,9 +17,6 @@ Storytelling plan:
 Trello Story Telling: https://trello.com/b/DCXk2lQI/pose-a-week
 
 
-
-
-
 Wireframes:
 
 
